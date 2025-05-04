@@ -25,7 +25,7 @@ project/
 └─ README.md               ← Setup instructions and usage guide  
 ```
 
-**Component Descriptions (Text-Only)**
+**Component Descriptions **
 
 1. **app/config.py**
    Contains a simple flag (`SHOW_AI_GENERATED`) and file paths for models and the TF-IDF vectorizer.
