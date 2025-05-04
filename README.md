@@ -25,7 +25,7 @@ project/
 └─ README.md               ← Setup instructions and usage guide  
 ```
 
-**Component Descriptions **
+**Component Descriptions**
 
 1. **app/config.py**
    SHOW_AI_GENERATED = True/False
