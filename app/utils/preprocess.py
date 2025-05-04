@@ -1,7 +1,7 @@
 import joblib
 
 # Load TF-IDF vectorizer
-vectorizer = joblib.load("App/Models/tfidf_vectorizer.pkl")
+vectorizer = joblib.load("app/models/tfidf_vectorizer.pkl")
 
 def preprocess_text(subject, body, structured_features):
     subject_body = subject + " " + body

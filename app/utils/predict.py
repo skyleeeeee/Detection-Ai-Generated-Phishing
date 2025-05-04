@@ -3,10 +3,10 @@ from app.utils.preprocess import preprocess_text
 
 # Load XGBoost models
 xgb_phishing = Booster()
-xgb_phishing.load_model("App/Models/xgboost_phishing_model.json")
+xgb_phishing.load_model("app/models/xgboost_phishing_model.json")
 
 xgb_ai = Booster()
-xgb_ai.load_model("App/Models/xgboost_ai_generated_model.json")
+xgb_ai.load_model("app/models/xgboost_ai_generated_model.json")
 
 def predict_email(email_data):
     subject = email_data.get("subject", "")
@@ -27,4 +27,4 @@ def predict_email(email_data):
         "ai_generated": ai_generated_pred,
         "email": body[:250] + ("..." if len(body) > 250 else "")
     }
-```
+
